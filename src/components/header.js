@@ -15,7 +15,7 @@ export function renderHeader(currentRoute, state) {
     </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#/" class="brand-link" aria-label="${t('brand.name')}">
+        <a href="#/" class="brand-link">
           <svg class="brand-mark" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
             <rect width="40" height="40" rx="10" fill="#0F172A"/>
             <path d="M11 9h12l6 6v15a1.5 1.5 0 0 1-1.5 1.5H11A1.5 1.5 0 0 1 9.5 30V10.5A1.5 1.5 0 0 1 11 9z" fill="#FAF8F5"/>

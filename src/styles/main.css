@@ -5,8 +5,8 @@
   --ink: #0F172A;
   --ink-muted: #475569;
   --border: #E2DDD5;
-  --accent: #D94E28;
-  --accent-hover: #B83D1C;
+  --accent: #C03D19;
+  --accent-hover: #9E3012;
   --accent-soft: #FDF0EC;
   --cyan: #0095D9;
   --magenta: #D81B60;
@@ -234,8 +234,8 @@ a { color: inherit; text-decoration: none; }
 .btn-outline { background: var(--surface); border-color: var(--border); color: var(--ink); }
 .btn-outline:hover:not(:disabled) { border-color: var(--ink); background: var(--surface-alt); }
 
-.btn-whatsapp { background: #16A34A; color: #fff; }
-.btn-whatsapp:hover:not(:disabled) { background: #15803D; }
+.btn-whatsapp { background: #15803D; color: #fff; }
+.btn-whatsapp:hover:not(:disabled) { background: #166534; }
 
 .btn-danger { background: var(--danger); color: #fff; }
 .btn-sm { min-height: 38px; padding: 6px 12px; font-size: 0.85rem; }

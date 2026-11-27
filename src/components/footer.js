@@ -16,7 +16,7 @@ export function renderFooter(state) {
           </div>
         </div>
         <div>
-          <h4>${t('footer.quickLinks')}</h4>
+          <h2 class="footer-heading" style="font-size:1rem;margin:0 0 8px;">${t('footer.quickLinks')}</h2>
           <ul class="footer-links">
             <li><a href="#/">${t('nav.home')}</a></li>
             <li><a href="#/print">${t('nav.print')}</a></li>
@@ -25,7 +25,7 @@ export function renderFooter(state) {
           </ul>
         </div>
         <div>
-          <h4>${t('footer.contact')}</h4>
+          <h2 class="footer-heading" style="font-size:1rem;margin:0 0 8px;">${t('footer.contact')}</h2>
           <p class="footer-meta">${escapeHtml(localize(info, 'address'))}</p>
           <p class="footer-meta">${escapeHtml(localize(info, 'hours'))}</p>
           <p class="footer-meta"><a href="tel:${escapeHtml(info.phone)}">${escapeHtml(info.phone)}</a> · <a href="${waUrl}" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>

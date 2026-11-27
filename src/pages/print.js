@@ -100,7 +100,7 @@ export function renderPrintPage(state) {
           <!-- Step 1: Upload -->
           <section class="sheet-card">
             <h2 style="margin-top:0;">${t('print.step1')}</h2>
-            <div class="dropzone" id="print-dropzone" tabindex="0" role="button" aria-label="${t('print.chooseFile')}">
+            <div class="dropzone" id="print-dropzone" tabindex="0" role="button">
               <input type="file" id="print-file-input" class="hidden" accept=".pdf,.jpg,.jpeg,.png,.docx,.pptx" />
               <div class="dropzone-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
