@@ -202,6 +202,16 @@ CREATE POLICY "orders_admin_all" ON public.orders
   USING (public.is_admin())
   WITH CHECK (public.is_admin());
 
+-- PostgreSQL role grants (RLS enforces row-level & admin-only write rules)
+GRANT USAGE ON SCHEMA public TO anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.is_admin() TO anon, authenticated;
+
+GRANT SELECT ON public.settings, public.print_prices, public.quantity_discounts, public.finishing_options, public.categories, public.products TO anon;
+REVOKE ALL ON public.admins, public.orders FROM anon;
+
+GRANT SELECT ON public.admins TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.settings, public.print_prices, public.quantity_discounts, public.finishing_options, public.categories, public.products, public.orders TO authenticated;
+
 -- 4. SERVER-SIDE ORDER RPC FUNCTIONS (SECURITY DEFINER)
 -- -----------------------------------------------------------------------------
 
